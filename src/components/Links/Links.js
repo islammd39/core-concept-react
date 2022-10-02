@@ -1,16 +1,10 @@
 import React from 'react';
 
-const Links = ({path}) => {
+const Links = ({route}) => {
     return (
-        <div>
-            <ul>
-                <li>{path.name}</li>
-                <li></li>
-                <li>About</li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
+             <div className='text-center list-unstyled'>
+                <li><a className='text-decoration-none text-secondary' href={route.path}>{route.name}</a></li>
+             </div>
     );
 };
 

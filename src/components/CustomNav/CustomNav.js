@@ -12,7 +12,7 @@ const CustomNav = () => {
     return (
         <div>
             {
-                Paths.map(path => <Links key={path.id} path={path}></Links>) 
+                Paths.map(route => <Links key={route.id} route={route}></Links>) 
             }
         </div>
     );
